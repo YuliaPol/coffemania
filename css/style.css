@@ -335,31 +335,37 @@ body {
 }
 
 .page-wrapper.poll-page .content-page .form-group.has-error input[type=text],
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=tel],
 .page-wrapper.poll-page .content-page .form-group.has-error textarea {
   border-bottom: 1px solid #c62b24;
 }
 
 .page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::-webkit-input-placeholder,
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=tel]::-webkit-input-placeholder,
 .page-wrapper.poll-page .content-page .form-group.has-error textarea::-webkit-input-placeholder {
   color: #c62b24;
 }
 
 .page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::-moz-placeholder,
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=tel]::-moz-placeholder,
 .page-wrapper.poll-page .content-page .form-group.has-error textarea::-moz-placeholder {
   color: #c62b24;
 }
 
 .page-wrapper.poll-page .content-page .form-group.has-error input[type=text]:-ms-input-placeholder,
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=tel]:-ms-input-placeholder,
 .page-wrapper.poll-page .content-page .form-group.has-error textarea:-ms-input-placeholder {
   color: #c62b24;
 }
 
 .page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::-ms-input-placeholder,
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=tel]::-ms-input-placeholder,
 .page-wrapper.poll-page .content-page .form-group.has-error textarea::-ms-input-placeholder {
   color: #c62b24;
 }
 
 .page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::placeholder,
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=tel]::placeholder,
 .page-wrapper.poll-page .content-page .form-group.has-error textarea::placeholder {
   color: #c62b24;
 }
@@ -418,7 +424,8 @@ body {
   background-color: transparent;
 }
 
-.page-wrapper.poll-page .content-page .form-group input[type=text] {
+.page-wrapper.poll-page .content-page .form-group input[type=text],
+.page-wrapper.poll-page .content-page .form-group input[type=tel] {
   width: 100%;
   background: transparent;
   border-top: none;
@@ -436,23 +443,28 @@ body {
   transition: all 0.3s ease-in;
 }
 
-.page-wrapper.poll-page .content-page .form-group input[type=text]::-webkit-input-placeholder {
+.page-wrapper.poll-page .content-page .form-group input[type=text]::-webkit-input-placeholder,
+.page-wrapper.poll-page .content-page .form-group input[type=tel]::-webkit-input-placeholder {
   color: rgba(253, 253, 253, 0.502);
 }
 
-.page-wrapper.poll-page .content-page .form-group input[type=text]::-moz-placeholder {
+.page-wrapper.poll-page .content-page .form-group input[type=text]::-moz-placeholder,
+.page-wrapper.poll-page .content-page .form-group input[type=tel]::-moz-placeholder {
   color: rgba(253, 253, 253, 0.502);
 }
 
-.page-wrapper.poll-page .content-page .form-group input[type=text]:-ms-input-placeholder {
+.page-wrapper.poll-page .content-page .form-group input[type=text]:-ms-input-placeholder,
+.page-wrapper.poll-page .content-page .form-group input[type=tel]:-ms-input-placeholder {
   color: rgba(253, 253, 253, 0.502);
 }
 
-.page-wrapper.poll-page .content-page .form-group input[type=text]::-ms-input-placeholder {
+.page-wrapper.poll-page .content-page .form-group input[type=text]::-ms-input-placeholder,
+.page-wrapper.poll-page .content-page .form-group input[type=tel]::-ms-input-placeholder {
   color: rgba(253, 253, 253, 0.502);
 }
 
-.page-wrapper.poll-page .content-page .form-group input[type=text]::placeholder {
+.page-wrapper.poll-page .content-page .form-group input[type=text]::placeholder,
+.page-wrapper.poll-page .content-page .form-group input[type=tel]::placeholder {
   color: rgba(253, 253, 253, 0.502);
 }
 

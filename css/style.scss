@@ -288,6 +288,7 @@ body {
           }
           &.has-error {
             input[type=text],
+            input[type=tel],
             textarea {
               border-bottom: 1px solid $red;
               &::placeholder {
@@ -326,7 +327,8 @@ body {
                 background-color: transparent;
             }
           }
-          input[type=text] {
+          input[type=text],
+          input[type=tel]{
             width: 100%;
             background: transparent;
             border-top: none;
