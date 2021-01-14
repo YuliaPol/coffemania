@@ -1,0 +1,653 @@
+@import url("./../fonts/Cammron/CammronDemo.css");
+@import url("./../fonts/ProximaNova/stylesheet.css");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: #000000;
+}
+
+.page-wrapper {
+  max-width: 400px;
+  height: 100vh;
+  max-height: 800px;
+  margin: auto;
+}
+
+.page-wrapper.first-page {
+  background: url(./../img/bg-intro.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.page-wrapper.first-page .header {
+  font-size: 33px;
+  font-family: "Cammron";
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.273;
+  text-align: center;
+  max-width: 220px;
+  margin: auto;
+  padding-top: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.page-wrapper.first-page .next-page {
+  padding-top: 190px;
+  text-align: center;
+}
+
+.page-wrapper.thanks-page {
+  background: url(./../img/bg-thanks.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.page-wrapper.thanks-page .thanks-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+.page-wrapper.thanks-page .thanks-container .thanks-wrapper {
+  background-color: rgba(187, 60, 51, 0.55);
+  -webkit-box-shadow: 0px 3px 38px 2px rgba(0, 0, 0, 0.45);
+          box-shadow: 0px 3px 38px 2px rgba(0, 0, 0, 0.45);
+  padding: 20px 5px;
+  text-align: center;
+}
+
+.page-wrapper.thanks-page .thanks-container .thanks-wrapper .header {
+  padding-top: 110px;
+  font-size: 18px;
+  font-family: "Cammron";
+  color: white;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  padding-bottom: 120px;
+}
+
+.page-wrapper.thanks-page .thanks-container .thanks-wrapper .header .bigger {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.page-wrapper.thanks-page .thanks-container .thanks-wrapper .bottom-text {
+  font-size: 12px;
+  font-family: "Proxima Nova Lt";
+  color: #fefefe;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.page-wrapper.poll-page {
+  background: url(./../img/bg-poll.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.page-wrapper.poll-page .content-page {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 310px;
+  margin: auto;
+}
+
+.page-wrapper.poll-page .content-page .top-text {
+  font-size: 14px;
+  line-height: 1.214;
+  color: #eeeeec;
+  font-family: "Proxima Nova Lt";
+  text-align: center;
+  max-width: 130px;
+  margin: auto;
+}
+
+.page-wrapper.poll-page .content-page .header {
+  font-size: 15px;
+  line-height: 1.133;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Cammron";
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.page-wrapper.poll-page .content-page .radio-group {
+  padding-bottom: 30px;
+}
+
+.page-wrapper.poll-page .content-page .radio-group.has-error .error-text {
+  opacity: 1;
+}
+
+.page-wrapper.poll-page .content-page .radio-group .error-text {
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item {
+  width: calc(100% / 4);
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item:nth-child(1) label .picture {
+  background-image: url(./../img/value-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item:nth-child(1) input[type=radio]:checked ~ label {
+  background-color: rgba(187, 60, 51, 0.6);
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item:nth-child(1) label .picture {
+  background-image: url(./../img/value-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item:nth-child(1) input[type=radio]:checked ~ label {
+  background-color: rgba(187, 60, 51, 0.6);
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item:nth-child(2) label .picture {
+  background-image: url(./../img/value-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item:nth-child(2) input[type=radio]:checked ~ label {
+  background-color: rgba(187, 118, 51, 0.6);
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item:nth-child(3) label .picture {
+  background-image: url(./../img/value-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item:nth-child(3) input[type=radio]:checked ~ label {
+  background-color: rgba(192, 187, 53, 0.6);
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item:nth-child(4) label .picture {
+  background-image: url(./../img/value-4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item:nth-child(4) input[type=radio]:checked ~ label {
+  background-color: rgba(147, 187, 51, 0.6);
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item input[type=radio] {
+  display: none;
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item input[type=radio]:checked ~ label .picture {
+  background-image: url(./../img/value-a.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item input[type=radio]:checked ~ label .text {
+  color: #ffffff;
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item label {
+  display: block;
+  padding: 5px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: background-color 0.3s ease-in;
+  -o-transition: background-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item label .picture {
+  width: 50px;
+  height: 40px;
+  -webkit-transition: background-image 0.3s ease-in;
+  -o-transition: background-image 0.3s ease-in;
+  transition: background-image 0.3s ease-in;
+}
+
+.page-wrapper.poll-page .content-page .ratings-wrapper .ratings-item label .text {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #fcfcfb;
+  line-height: 1.415;
+  font-family: "Proxima Nova Lt";
+  -webkit-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+.page-wrapper.poll-page .content-page .form-group {
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 260px;
+  margin: auto;
+}
+
+.page-wrapper.poll-page .content-page .form-group.pd-50 {
+  padding-bottom: 50px;
+}
+
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=text] {
+  border-bottom: 1px solid #c62b24;
+}
+
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::-webkit-input-placeholder {
+  color: #c62b24;
+}
+
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::-moz-placeholder {
+  color: #c62b24;
+}
+
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=text]:-ms-input-placeholder {
+  color: #c62b24;
+}
+
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::-ms-input-placeholder {
+  color: #c62b24;
+}
+
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::placeholder {
+  color: #c62b24;
+}
+
+.page-wrapper.poll-page .content-page .form-group input[type=text] {
+  width: 100%;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ffffff;
+  padding: 10px 0px;
+  outline: none;
+  font-size: 12px;
+  line-height: 1.417;
+  font-family: "Proxima Nova Lt";
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.page-wrapper.poll-page .content-page .form-group input[type=text]::-webkit-input-placeholder {
+  color: rgba(253, 253, 253, 0.502);
+}
+
+.page-wrapper.poll-page .content-page .form-group input[type=text]::-moz-placeholder {
+  color: rgba(253, 253, 253, 0.502);
+}
+
+.page-wrapper.poll-page .content-page .form-group input[type=text]:-ms-input-placeholder {
+  color: rgba(253, 253, 253, 0.502);
+}
+
+.page-wrapper.poll-page .content-page .form-group input[type=text]::-ms-input-placeholder {
+  color: rgba(253, 253, 253, 0.502);
+}
+
+.page-wrapper.poll-page .content-page .form-group input[type=text]::placeholder {
+  color: rgba(253, 253, 253, 0.502);
+}
+
+.page-wrapper.poll-page .content-page .check-group {
+  padding-top: 30px;
+}
+
+.page-wrapper.poll-page .content-page .check-group.has-error .checkbox-row .checkbox-icon {
+  border-color: #c62b24;
+}
+
+.page-wrapper.poll-page .content-page .check-group.has-error .checkbox-row .checkbox-text {
+  color: #c62b24;
+}
+
+.page-wrapper.poll-page .content-page .check-group input[type=checkbox] {
+  display: none;
+}
+
+.page-wrapper.poll-page .content-page .check-group input[type=checkbox]:checked ~ .checkbox-row .checkbox-icon .checkmark_stem {
+  height: 25px;
+}
+
+.page-wrapper.poll-page .content-page .check-group input[type=checkbox]:checked ~ .checkbox-row .checkbox-icon .checkmark_kick {
+  height: 10px;
+}
+
+.page-wrapper.poll-page .content-page .check-group .checkbox-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-wrapper.poll-page .content-page .check-group .checkbox-row .checkbox-icon {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.page-wrapper.poll-page .content-page .check-group .checkbox-row .checkbox-icon .checkmark {
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  display: inline-block;
+  width: 21px;
+  height: 17px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.page-wrapper.poll-page .content-page .check-group .checkbox-row .checkbox-icon .checkmark_stem {
+  position: absolute;
+  width: 2px;
+  background-color: #fff;
+  left: 8px;
+  top: -12px;
+  height: 0px;
+  -webkit-transition: height 0.2s ease-in;
+  -o-transition: height 0.2s ease-in;
+  transition: height 0.2s ease-in;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.page-wrapper.poll-page .content-page .check-group .checkbox-row .checkbox-icon .checkmark_kick {
+  position: absolute;
+  width: 2px;
+  background-color: #fff;
+  left: 4px;
+  top: 8px;
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+       -o-transform: rotate(270deg);
+          transform: rotate(270deg);
+  height: 0px;
+  -webkit-transition: height 0.2s ease-in;
+  -o-transition: height 0.2s ease-in;
+  transition: height 0.2s ease-in;
+}
+
+.page-wrapper.poll-page .content-page .check-group .checkbox-row .checkbox-text {
+  width: calc(100% - 40px);
+  font-family: "Proxima Nova Lt";
+  font-size: 12px;
+  color: #eeeeec;
+  line-height: 1.417;
+  text-align: left;
+}
+
+.page-wrapper.poll-page .content-page .upload-file-wrapper input[type=file] {
+  display: none;
+}
+
+.page-wrapper.poll-page .content-page .upload-file-wrapper .file-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-wrapper.poll-page .content-page .upload-file-wrapper .file-row .file-name {
+  width: calc(100% - 40px);
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1.417;
+  font-family: "Proxima Nova Lt";
+  color: #ffffff;
+  padding-right: 20px;
+}
+
+.page-wrapper.poll-page .content-page .upload-file-wrapper .file-row .file-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url(./../img/file-upload.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  cursor: pointer;
+}
+
+.page-wrapper.poll-page .content-page .submit-group {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.page-wrapper.poll-page .error-text {
+  font-size: 14px;
+  color: #c62b24;
+  font-family: "Proxima Nova Lt";
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+
+.page-wrapper .top-page {
+  position: relative;
+  padding: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-wrapper .top-page .logo {
+  width: 145px;
+}
+
+.page-wrapper .top-page .logo img {
+  max-width: 100%;
+}
+
+.page-wrapper .top-page .lang-menu {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: #fbfbfb10;
+  border-radius: 14px;
+  padding: 5px;
+}
+
+.page-wrapper .top-page .lang-menu ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-wrapper .top-page .lang-menu ul li {
+  padding: 5px;
+  min-width: 50px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Arial";
+  color: #fbfbf9;
+  text-align: center;
+}
+
+.page-wrapper .top-page .lang-menu ul li:first-child {
+  border-bottom: 1px solid #676767;
+}
+
+.page-wrapper .top-page .lang-menu ul li.active {
+  color: #d4af36;
+}
+
+.page-wrapper .top-page .lang-menu ul li.active a {
+  color: #d4af36;
+}
+
+.page-wrapper .top-page .lang-menu ul li a {
+  color: #fbfbf9;
+  text-decoration: none;
+  outline: none;
+}
+
+.page-wrapper .btn-red {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #c62b24;
+  color: #fefefe;
+  font-size: 18px;
+  line-height: 2.222;
+  text-align: center;
+  font-family: "Proxima Nova Lt";
+  text-decoration: none;
+  outline: none;
+  letter-spacing: 1px;
+  border: none;
+  min-width: 215px;
+}
+
+.page-wrapper .btn-red:hover {
+  background: #d01e16;
+}
