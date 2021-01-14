@@ -54,6 +54,7 @@ jQuery(function ($) {
                 var el = document.querySelectorAll('.form-valid input[type="checkbox"]');
                 for (var i = 0; i < el.length; i++) {
                     if ($(el[i]).parents('.check-group').length != 0 && el[i].checked != true) {
+                        erroreArrayElemnts.push(el[i]);
                         $(el[i]).parents('.check-group').addClass('has-error');
                         $('.check-group input').change(function (e) {
                             $(e.target).parents('.check-group').removeClass('has-error');
