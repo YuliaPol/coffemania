@@ -132,10 +132,10 @@ body {
 
 .page-wrapper.poll-page {
   background: url(./../img/bg-poll.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-position: top center;
+  background-repeat: repeat-y;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
 }
 
 .page-wrapper.poll-page .content-page {
@@ -334,28 +334,88 @@ body {
   padding-bottom: 50px;
 }
 
-.page-wrapper.poll-page .content-page .form-group.has-error input[type=text] {
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=text],
+.page-wrapper.poll-page .content-page .form-group.has-error textarea {
   border-bottom: 1px solid #c62b24;
 }
 
-.page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::-webkit-input-placeholder {
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::-webkit-input-placeholder,
+.page-wrapper.poll-page .content-page .form-group.has-error textarea::-webkit-input-placeholder {
   color: #c62b24;
 }
 
-.page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::-moz-placeholder {
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::-moz-placeholder,
+.page-wrapper.poll-page .content-page .form-group.has-error textarea::-moz-placeholder {
   color: #c62b24;
 }
 
-.page-wrapper.poll-page .content-page .form-group.has-error input[type=text]:-ms-input-placeholder {
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=text]:-ms-input-placeholder,
+.page-wrapper.poll-page .content-page .form-group.has-error textarea:-ms-input-placeholder {
   color: #c62b24;
 }
 
-.page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::-ms-input-placeholder {
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::-ms-input-placeholder,
+.page-wrapper.poll-page .content-page .form-group.has-error textarea::-ms-input-placeholder {
   color: #c62b24;
 }
 
-.page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::placeholder {
+.page-wrapper.poll-page .content-page .form-group.has-error input[type=text]::placeholder,
+.page-wrapper.poll-page .content-page .form-group.has-error textarea::placeholder {
   color: #c62b24;
+}
+
+.page-wrapper.poll-page .content-page .form-group textarea {
+  width: 100%;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ffffff;
+  padding: 10px 0px;
+  outline: none;
+  font-size: 12px;
+  line-height: 1.1;
+  font-family: "Proxima Nova Lt", Helvetica, sans-serif;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  resize: none;
+  height: 38px;
+}
+
+.page-wrapper.poll-page .content-page .form-group textarea::-webkit-input-placeholder {
+  color: rgba(253, 253, 253, 0.502);
+}
+
+.page-wrapper.poll-page .content-page .form-group textarea::-moz-placeholder {
+  color: rgba(253, 253, 253, 0.502);
+}
+
+.page-wrapper.poll-page .content-page .form-group textarea:-ms-input-placeholder {
+  color: rgba(253, 253, 253, 0.502);
+}
+
+.page-wrapper.poll-page .content-page .form-group textarea::-ms-input-placeholder {
+  color: rgba(253, 253, 253, 0.502);
+}
+
+.page-wrapper.poll-page .content-page .form-group textarea::placeholder {
+  color: rgba(253, 253, 253, 0.502);
+}
+
+.page-wrapper.poll-page .content-page .form-group textarea::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+.page-wrapper.poll-page .content-page .form-group textarea::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+.page-wrapper.poll-page .content-page .form-group textarea::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }
 
 .page-wrapper.poll-page .content-page .form-group input[type=text] {

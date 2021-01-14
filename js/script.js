@@ -14,6 +14,13 @@ jQuery(function ($) {
         
         $('.phone-group input').mask("+7 (999) 999-9999");
 
+        $('.page-wrapper').on('keyup', 'textarea', function(e){
+            textAreaAdjust(this)
+        });
+        function textAreaAdjust(el) {
+            el.style.height = (el.scrollHeight > el.clientHeight) ? (el.scrollHeight)+"px" : "38px";
+        }
+
         var formValid = document.getElementsByClassName('form-valid')[0];
         $('.valid-form-send').click(function () {
             $(this).parents('form').submit(function (e) {

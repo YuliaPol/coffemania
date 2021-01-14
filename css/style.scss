@@ -115,9 +115,9 @@ body {
     }
     &.poll-page {
       background: url(./../img/bg-poll.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      background-position: top center;
+      background-repeat: repeat-y;
+      background-size: 100%;
       .content-page {
         padding-left: 15px;
         padding-right: 15px;
@@ -287,11 +287,43 @@ body {
             padding-bottom: 50px;
           }
           &.has-error {
-            input[type=text] {
+            input[type=text],
+            textarea {
               border-bottom: 1px solid $red;
               &::placeholder {
                 color: $red;
               }
+            }
+          }
+          textarea {
+            width: 100%;
+            background: transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid #ffffff;
+            padding: 10px 0px;
+            outline: none;
+            font-size: 12px;
+            line-height: 1.1;
+            font-family: $fontText;
+            color: #ffffff;
+            transition: all 0.3s ease-in;
+            resize: none;
+            height: 38px;
+            &::placeholder {
+              color: rgba(253, 253, 253, 0.502);
+            }
+            &::-webkit-scrollbar-track {
+                border-radius: 0px;
+                background-color: transparent;
+            }
+            &::-webkit-scrollbar {
+                width: 0px;
+                background-color: transparent;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: transparent;
             }
           }
           input[type=text] {
