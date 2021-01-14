@@ -11,6 +11,8 @@ jQuery(function ($) {
                 $(this).parents('.upload-file-wrapper').find('.file-name').html(filesName);
             }
         });
+        
+        $('.phone-group input').mask("+7 (999) 999-9999");
 
         var formValid = document.getElementsByClassName('form-valid')[0];
         $('.valid-form-send').click(function () {
