@@ -30,11 +30,15 @@ jQuery(function ($) {
 
                 var el = document.querySelectorAll('.form-valid input[type="radio"]');
                 for (var i = 0; i < el.length; i++) {
-                    if ($(el[i]).parents('.radio-group').length != 0) {
-                        $(el[i]).parents('.radio-group').addClass('has-error');
-                        $('.radio-group input').change(function (e) {
-                            $(e.target).parents('.radio-group').removeClass('has-error');
-                        });
+                    var name = el[i].getAttribute('name');
+                    if (document.querySelectorAll('[name=' + name + ']:checked').length === 0) {
+                        if ($(el[i]).parents('.radio-group').length != 0) {
+                            erroreArrayElemnts.push(el[i]);
+                            $(el[i]).parents('.radio-group').addClass('has-error');
+                            $('.radio-group input').change(function (e) {
+                                $(e.target).parents('.radio-group').removeClass('has-error');
+                            });
+                        }
                     }
                 }
 

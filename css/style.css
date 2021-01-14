@@ -62,7 +62,7 @@ body {
 
 .page-wrapper.first-page .header {
   font-size: 33px;
-  font-family: "Cammron";
+  font-family: "Cammron", Arial;
   color: white;
   text-transform: uppercase;
   line-height: 1.273;
@@ -104,7 +104,7 @@ body {
 .page-wrapper.thanks-page .thanks-container .thanks-wrapper .header {
   padding-top: 110px;
   font-size: 18px;
-  font-family: "Cammron";
+  font-family: "Cammron", Arial;
   color: white;
   text-transform: uppercase;
   line-height: 1;
@@ -119,7 +119,7 @@ body {
 
 .page-wrapper.thanks-page .thanks-container .thanks-wrapper .bottom-text {
   font-size: 12px;
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Lt", Arial;
   color: #fefefe;
   line-height: 1.5;
   text-align: center;
@@ -144,7 +144,7 @@ body {
   font-size: 14px;
   line-height: 1.214;
   color: #eeeeec;
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Lt", Arial;
   text-align: center;
   max-width: 130px;
   margin: auto;
@@ -156,7 +156,7 @@ body {
   color: white;
   text-transform: uppercase;
   text-align: center;
-  font-family: "Cammron";
+  font-family: "Cammron", Arial;
   font-weight: bold;
   letter-spacing: 2px;
   padding-top: 40px;
@@ -311,7 +311,7 @@ body {
   font-size: 12px;
   color: #fcfcfb;
   line-height: 1.415;
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Lt", Arial;
   -webkit-transition: color 0.3s ease-in;
   -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
@@ -364,7 +364,7 @@ body {
   outline: none;
   font-size: 12px;
   line-height: 1.417;
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Lt", Arial;
   color: #ffffff;
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
@@ -486,7 +486,7 @@ body {
 
 .page-wrapper.poll-page .content-page .check-group .checkbox-row .checkbox-text {
   width: calc(100% - 40px);
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Lt", Arial;
   font-size: 12px;
   color: #eeeeec;
   line-height: 1.417;
@@ -519,7 +519,7 @@ body {
   overflow: hidden;
   font-size: 12px;
   line-height: 1.417;
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Lt", Arial;
   color: #ffffff;
   padding-right: 20px;
 }
@@ -543,7 +543,7 @@ body {
 .page-wrapper.poll-page .error-text {
   font-size: 14px;
   color: #c62b24;
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Lt", Arial;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in;
   -o-transition: opacity 0.3s ease-in;
@@ -640,7 +640,7 @@ body {
   font-size: 18px;
   line-height: 2.222;
   text-align: center;
-  font-family: "Proxima Nova Lt";
+  font-family: "Proxima Nova Lt", Arial;
   text-decoration: none;
   outline: none;
   letter-spacing: 1px;
