@@ -45,10 +45,15 @@ body {
   background: #000000;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .page-wrapper {
   max-width: 400px;
-  height: 100vh;
-  max-height: 800px;
+  min-height: 100vh;
+  padding-bottom: 20px;
   margin: auto;
 }
 
@@ -136,7 +141,7 @@ body {
 .page-wrapper.poll-page .content-page {
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 310px;
+  max-width: 340px;
   margin: auto;
 }
 
@@ -321,7 +326,7 @@ body {
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 260px;
+  max-width: 280px;
   margin: auto;
 }
 
@@ -408,11 +413,11 @@ body {
 }
 
 .page-wrapper.poll-page .content-page .check-group input[type=checkbox]:checked ~ .checkbox-row .checkbox-icon .checkmark_stem {
-  height: 25px;
+  height: 20px;
 }
 
 .page-wrapper.poll-page .content-page .check-group input[type=checkbox]:checked ~ .checkbox-row .checkbox-icon .checkmark_kick {
-  height: 10px;
+  height: 6px;
 }
 
 .page-wrapper.poll-page .content-page .check-group .checkbox-row {
@@ -456,8 +461,8 @@ body {
   position: absolute;
   width: 2px;
   background-color: #fff;
-  left: 8px;
-  top: -12px;
+  left: 5px;
+  top: -7px;
   height: 0px;
   -webkit-transition: height 0.2s ease-in;
   -o-transition: height 0.2s ease-in;
@@ -472,8 +477,8 @@ body {
   position: absolute;
   width: 2px;
   background-color: #fff;
-  left: 4px;
-  top: 8px;
+  left: 1px;
+  top: 9px;
   -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
        -o-transform: rotate(270deg);

@@ -44,10 +44,13 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
     background: #000000;
 }
+* {
+  box-sizing: border-box;
+}
 .page-wrapper {
     max-width: 400px;
-    height: 100vh;
-    max-height: 800px;
+    min-height: 100vh;
+    padding-bottom: 20px;
     margin: auto;
     &.first-page {
         background: url(./../img/bg-intro.jpg);
@@ -118,7 +121,7 @@ body {
       .content-page {
         padding-left: 15px;
         padding-right: 15px;
-        max-width: 310px;
+        max-width: 340px;
         margin: auto;
         .top-text {
           font-size: 14px;
@@ -278,7 +281,7 @@ body {
           padding-bottom: 10px;
           padding-left: 15px;
           padding-right: 15px;
-          max-width: 260px;
+          max-width: 280px;
           margin: auto;
           &.pd-50 {
             padding-bottom: 50px;
@@ -327,10 +330,10 @@ body {
             &:checked ~  .checkbox-row {
               .checkbox-icon {
                 .checkmark_stem {
-                  height: 25px;
+                  height: 20px;
                 }
                 .checkmark_kick {
-                  height: 10px;
+                  height: 6px;
                 }
               }
             }
@@ -359,8 +362,8 @@ body {
                   position: absolute;
                   width: 2px;
                   background-color:#fff;
-                  left: 8px;
-                  top: -12px;
+                  left: 5px;
+                  top: -7px;
                   height: 0px;
                   transition: height 0.2s ease-in;
                   transform: rotate(180deg);
@@ -369,8 +372,8 @@ body {
                   position: absolute;
                   width: 2px;
                   background-color:#fff;
-                  left: 4px;
-                  top: 8px;
+                  left: 1px;
+                  top: 9px;
                   transform: rotate(270deg);
                   height: 0px;
                   transition: height 0.2s ease-in;
